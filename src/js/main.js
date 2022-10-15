@@ -7,6 +7,13 @@ const url = "https://api.adviceslip.com/advice";
 
 eventListners();
 function eventListners() {
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1440) {
+      patternDivider.src = "images/pattern-divider-desktop.svg";
+    } else {
+      patternDivider.src = "images/pattern-divider-mobile.svg";
+    }
+  });
   window.addEventListener("DOMContentLoaded", loadAdvice);
   btn.addEventListener("click", loadAdvice);
 }

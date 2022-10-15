@@ -17,3 +17,5 @@
 ./node_modules
 ./package-lock.json
 ./design
+./README-template.md
+./style-guide.md
