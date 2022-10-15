@@ -20,8 +20,6 @@
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 Through this project I learned different practices and functions in scss such as the use of mixins with keyfames.
 
 To see how you can add create scss keyframes, see below:
@@ -39,7 +37,7 @@ Mine was src/scss/base/mixins.scss
 
 ### Continued Development
 
-I have solid bases with JS, by the way actually I'm learning React. In the development of this project I had some troubles with changing the pattern divider image src. I tried to change the image source with JS according to the change of the viewport but I couldn't, until I read the resize listener documentation.
+I have solid bases with JS, actually I'm learning React. In the development of this project I had some troubles with changing the pattern divider image at ./images. I tried to change the image source with JS according to the change of the viewport but I couldn't, until I read the resize listener documentation.
 
 ### Useful Resources
 
