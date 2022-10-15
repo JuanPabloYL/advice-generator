@@ -22,7 +22,7 @@
 
 Through this project I learned different practices and functions in scss such as the use of mixins with keyfames.
 
-To see how you can add create scss keyframes, see below:
+To see how you can add and create scss keyframes, see below:
 
 Create the directory and the file where you want to store your code.
 Mine was src/scss/base/mixins.scss
