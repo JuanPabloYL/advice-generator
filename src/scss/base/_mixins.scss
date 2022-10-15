@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+@mixin mobile {
+  @media (min-width: v.$mobile) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin keyframe($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation, $duration, $method, $times;
+}

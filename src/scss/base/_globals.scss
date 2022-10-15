@@ -1,0 +1,33 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$mainFont;
+  font-size: 2.8rem;
+  background-color: v.$DarkBlue;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: min(97%, 120rem);
+  margin-inline: auto;
+  @include m.desktop {
+    width: min(35%, 120rem);
+  }
+}

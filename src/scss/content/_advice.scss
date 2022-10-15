@@ -1,0 +1,63 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.advice {
+  background-color: v.$DarkGrayishBlue;
+  color: v.$LightCyan;
+  border-radius: 1rem;
+  position: relative;
+  padding-bottom: 6rem;
+  margin-top: -30rem;
+
+  @include m.desktop {
+    margin-top: 0;
+  }
+
+  &__number {
+    color: v.$NeonGreen;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__border {
+    display: flex;
+    margin-top: -2.5rem;
+    justify-content: center;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: v.$NeonGreen;
+    position: absolute;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover,
+    &:active {
+      box-shadow: 2px -2px 30px v.$NeonGreen;
+    }
+
+    &:hover img {
+      @include m.keyframe(rotate) {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg) scale(1.1);
+        }
+      }
+      animation: rotate 1s ease-in infinite;
+      // @include m.animate(rotate, 0.5s, ease-in, infinite);
+    }
+  }
+}
